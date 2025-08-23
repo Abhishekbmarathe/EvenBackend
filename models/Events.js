@@ -30,10 +30,10 @@ const eventSchema = new mongoose.Schema(
     },
     status: {
       type: String,
-      enum: ["Pending", "Approved", "Rejected"],
-      default: "Pending",
+      enum: ["pending", "Approved", "Rejected"],
+      default: "pending",
     },
-    viewers: {
+    views: {
       type: Number,
       default: 0,
     },
